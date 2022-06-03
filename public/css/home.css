@@ -1,0 +1,112 @@
+.container_width{
+    width: 95%;
+}
+
+.slider_image{
+    height: 36rem;
+}
+
+.product_image{
+    height: 41rem;
+}
+.product_image2{
+    height: 20rem;
+}
+.product_detail ,.colorss{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product_detail h3{
+    font-weight: 600;
+    color: black;
+    font-size: 1.2vw;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+}
+.product_detail p{
+    font-size: 1.2vw;
+    color: #90959c;
+}
+.product_detail span{
+    font-size: 1.2vw;
+    color:rgb(173, 2, 2);
+    font-weight: 700;
+}
+.product_colors span{
+    border-radius: 50%;
+    padding: .2vw .5vw;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_icons{
+    position: absolute;
+    bottom: 29%;
+    left: 25%;
+    right: 0;
+    display: none;
+}
+.card_icons i{
+    text-decoration: none;
+    background-color: #fff;
+    color: red;
+    padding: .7rem 1rem;
+    font-size: 1.5vw;
+}
+.card_icons i:hover{
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+} 
+.card_image:hover .card_icons{
+    display: block;
+}
+.card_icons  .icon_ac{
+    background-color: red;
+    color: #fff;
+}
+.discount{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    border-radius: 50%;
+    padding: 1.1rem .9rem;
+    background-color: red;
+    color: #fff;
+    font-weight: 700;
+}
+
+.slider_review_image{
+    border-radius: 50%;
+    width:9%;
+    height:8rem;
+}
+h3{
+    font-size: 2vw;
+    font-weight: 700;
+    color:#fff;
+}
+.slider_text p{
+
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+.see_all{
+    display: flex;
+    justify-content: space-between;
+}
+ .see_all button{
+     background-color: #DC143C;
+     color: #fff;
+ }
+ .see_all button:hover{
+    background-color: #00151D;
+    color: #fff;
+}

@@ -1,0 +1,46 @@
+.data_sidebar{
+    display: flex;
+    width: 100%;
+}
+.sidebar{
+    flex: 2;
+    
+}
+.product_bar{
+    flex: 3;
+    height: 100%;
+    margin: 1%;
+}
+.cut_icon
+{
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+    color: red;
+    z-index: 999;
+}
+
+@media (max-width:500px)
+{
+    .sidebar{
+        flex: 1;
+        z-index: 10;
+        position: absolute;
+        left: 52%;  
+        height: 100vh;
+        padding: 2rem 12rem;
+    }
+
+}
+@media (min-width:501px) and (max-width:900px)
+{
+    .sidebar{
+        width: 100vw;
+        z-index: 10;
+        position: absolute;
+        left: 30%;
+        padding: 2rem 18rem;
+        height: 100vh;
+    }
+
+}
