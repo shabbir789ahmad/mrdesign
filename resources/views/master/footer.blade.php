@@ -6,10 +6,10 @@
                  <a href="about" class="text-light   nav-logo">mrDesign</a>
                  <p>This is the best product i have seen i am fully satisfied with the quality price and plus behavour this is the best product </p>
                  <div class="social_icon">
-                     <a href="/" ><i class="fas fa-facebook"></i></a>
-                     <a href="/" ><i class="fas fa-twitter"></i></a>
-                     <a href="/" ><i class="fas fa-heart"></i></a>
-                     <a href="/" ><i class="fas fa-heart"></i></a>
+                     <a href="/" ><i class="fa-brands fa-facebook"></i></a>
+                     <a href="/" ><i class="fa-brands fa-instagram-square"></i></a>
+                     <a href="/" ><i class="fa-brands fa-twitter"></i></a>
+                     <a href="/" ><i class="fa-brands fa-linkedin"></i></a>
                  </div>
                </div>
            </div>

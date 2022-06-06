@@ -11,8 +11,40 @@ $categories=Category::category();
                <button class="btn-search btn ">Search</button>
              </div>
              <div class="icons ">
-             <i class="fas fa-shopping-cart fa-lg mr-5"></i>
-             <i class="fas fa-heart fa-lg text-danger ml-2"></i>
+             <i class="fas fa-shopping-cart fa-lg mr-1"></i>
+             <i class="fas fa-heart fa-lg text-danger ml-2 mr-2"></i>
+
+              @guest
+          @if (Route::has('login'))
+          <a href="{{route('login')}}" class=" btn  btn-danger">login</a >
+          @endif
+          @else
+          
+           
+          <div class="btn-group user_img">
+            <!-- Default dropstart button -->
+            <div class="btn-group dropstart">
+              <img src="{{asset('img/avatars/download.png')}}" width="100%" class=" dropdown-toggle user_image" data-bs-toggle="dropdown" aria-expanded="false">
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="#">Dashboard</a></li>
+               <li><a class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">Log out
+              </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-hidden">
+                   @csrf
+                </form></li>
+             </ul>
+            </div>
+
+
+
+          </div>
+          
+     @endguest
+
+
+             
              </div>
            </nav>
 

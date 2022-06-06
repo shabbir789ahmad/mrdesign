@@ -1,4 +1,4 @@
-@extends('master.master')
+@extends('admin.master')
 
 @section('content')
 <style>
@@ -13,8 +13,13 @@
     .card{
         width:90%;
     }
+    .container_top{
+        margin-top: 10%;
+    }
+
 </style>
-<div class="container">
+
+<div class="container container_top">
     <div class="row justify-content-center mt-5">
         <div class="col-md-5">
             <div class="card">
@@ -56,8 +61,8 @@
                             </div>
                             <div classc="col-md-6">
                            @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                    <a class="btn btn-link mt-2" href="{{ route('password.request') }}">
+                                        {{ __('Forgot  Password?') }}
                                     </a>
                                 @endif
                            </div>
@@ -65,7 +70,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary btn-block py-3">
+                                <button type="submit" class="btn btn-danger btn-block py-3">
                                     {{ __('Login') }}
                                 </button>
 
